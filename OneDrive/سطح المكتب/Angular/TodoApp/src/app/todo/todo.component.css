@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+}
+.todo {
+  background-color: #eee;
+}
+
+.todo-completed {
+  background-color: rgb(9, 102, 71);
+  text-decoration: line-through;
+}

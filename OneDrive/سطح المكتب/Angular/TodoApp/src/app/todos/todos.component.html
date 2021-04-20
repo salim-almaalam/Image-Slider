@@ -1,0 +1,14 @@
+<!-- <p>todos works!</p> -->
+<div class="header text-center">
+  <h1>Todos</h1>
+</div>
+<div class="container">
+  <app-todo
+    *ngFor="let task of todos"
+    (toggleTask)="toggleEvent($event)"
+    (deleteTask)="deleteTask($event)"
+    [task]="task"
+  >
+  </app-todo>
+  <app-add-todo (addTodo)="addNew($event)"></app-add-todo>
+</div>

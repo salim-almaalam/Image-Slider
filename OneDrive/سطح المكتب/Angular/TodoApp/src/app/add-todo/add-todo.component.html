@@ -1,0 +1,11 @@
+<form (ngSubmit)="addNew()">
+  <input
+    type="text"
+    class="form-control mt-2"
+    placeholder="Add a todo!"
+    name="text"
+    [(ngModel)]="text"
+  />
+  <button type="submit" class="btn btn-primary m-1">Add</button>
+  <!-- <p>{{ text }}</p> -->
+</form>
